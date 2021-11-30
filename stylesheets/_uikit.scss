@@ -1,0 +1,110 @@
+//colors
+$black: #000000;
+$white: #ffff;
+$main: #323264;
+$alt: #46466e;
+$soft: #686887;
+$accent: #f0145a;
+$regular: #24a3ff;
+$hover: #0085ff;
+$active: #006ccf;
+$bg: #f5f5fa;
+$bgalt: #ededf7;
+$text: #b3b3ba;
+$separator: #e6e6f0;
+$gradient: linear-gradient(128.63deg, #323264 0%, #323264 73.96%, #a54b5f 100%);
+$gradient-soft: linear-gradient(
+  42.01deg,
+  #323264 14.33%,
+  #323264 51.39%,
+  #7a425e 87.53%
+);
+$gradient-red: linear-gradient(323.35deg, #f0145a 6.7%, #693264 70.36%);
+$gradient-supersoft: linear-gradient(
+  228.57deg,
+  #323264 11.93%,
+  #323264 57.17%,
+  #643e72 87.46%
+);
+%gradient-red-text {
+  color: transparent;
+  background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+//FONTS
+%hero {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 235%;
+  line-height: 46px;
+}
+%h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 190%;
+  line-height: 37px;
+  color: $regular;
+}
+%h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 140%;
+  line-height: 27px;
+  color: $regular;
+}
+%h3-caps {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 87.5%;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $regular;
+}
+%h4 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 100%;
+  line-height: 20px;
+  color: $regular;
+}
+%paragraph {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100%;
+  line-height: 26px;
+  color: $black;
+}
+%list-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 112.5%;
+  line-height: 26px;
+  color: $black;
+}
+%list-marker {
+  list-style-image: url("/image/dot_separator_accent.svg");
+}
+%ordered-list {
+  color: $accent;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 112.5%;
+  line-height: 26px;
+}
+%link-regular {
+  color: $active;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100%;
+  line-height: 20px;
+}
+%link-hover {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100%;
+  line-height: 20px;
+  color: $accent;
+}
