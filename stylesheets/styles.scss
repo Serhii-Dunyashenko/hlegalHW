@@ -51,13 +51,14 @@ ol span {
   @extend %gradient-red-text;
 }
 .container {
-  max-width: 1320px;
+  max-width: 1720px;
   margin: 0 auto;
 }
 
 //MAIN SECTION//
 
 .main-section {
+  padding: 0 60px;
   background: $gradient-supersoft;
   border-radius: 0px 0px 12px 12px;
   &__banner {
@@ -190,6 +191,9 @@ ol span {
     stroke: $accent;
   }
 }
+
+//TAGS//
+
 .main-tags {
   padding: 60px 0;
   &__wrap {
@@ -219,7 +223,7 @@ ol span {
     flex-direction: column;
     justify-content: center;
     padding-left: 60px;
-    max-width: 580px;
+    max-width: 861px;
 
     &__title {
       @extend %h2;
@@ -274,7 +278,7 @@ ol span {
     &__item {
       display: flex;
       flex-direction: column;
-      max-width: 400px;
+      max-width: 28.7%;
       margin-right: 60px;
       margin-bottom: 60px;
       &:nth-child(3n) {
@@ -301,19 +305,19 @@ ol span {
 //SECTION DIVIDER//
 .section-divider {
   margin: 0 auto;
-  max-width: 1460px;
+  max-width: 1920px;
   &-one {
     height: 10px;
     background-color: #cacadb;
     border-radius: 0px 0px 12px 12px;
-    max-width: 1400px;
+    max-width: 1880px;
     margin: 0 20px;
   }
   &-two {
     height: 10px;
     background-color: #e7e7f2;
     border-radius: 0px 0px 12px 12px;
-    max-width: 1360px;
+    max-width: 1840px;
     margin: 0 40px;
   }
 }
@@ -375,7 +379,7 @@ ol span {
 
 .partners {
   padding-top: 30px;
-  max-width: 1440px;
+  max-width: 1720px;
   margin: 0 auto;
   &__wrap {
     display: flex;
@@ -386,105 +390,24 @@ ol span {
     @extend %h3-caps;
     margin-bottom: 30px;
   }
+
   &__grid {
     display: flex;
     flex-wrap: wrap;
-    &__item {
-      &-1 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 25%;
-        height: 120px;
-        background-color: #1c4280;
+    border-radius: 12px;
+    &__image {
+      max-width: 25%;
+      &:first-child {
+        border-radius: 12px 0 0 0;
       }
-      &-2 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 25%;
-        height: 120px;
-        background-color: #143646;
+      &:nth-child(4) {
+        border-radius: 0 12px 0 0;
       }
-      &-3 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 25%;
-        height: 120px;
-        background-color: #f48b30;
+      &:nth-child(9) {
+        border-radius: 0 0 0 12px;
       }
-      &-4 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 25%;
-        height: 120px;
-        background-color: #9e4dc3;
-      }
-      &-5 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 25%;
-        height: 120px;
-        background-color: #fd9339;
-      }
-      &-6 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 25%;
-        height: 120px;
-        background-color: #e2e2e4;
-      }
-      &-7 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 25%;
-        height: 120px;
-        background-color: #c71c36;
-      }
-      &-8 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 25%;
-        height: 120px;
-        background-color: #dcf3f9;
-      }
-      &-9 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 25%;
-        height: 120px;
-        background-color: #eaeaea;
-      }
-      &-10 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 25%;
-        height: 120px;
-        background-color: #282240;
-      }
-      &-11 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 25%;
-        height: 120px;
-        background-color: #1d4568;
-      }
-      &-12 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 25%;
-        height: 120px;
-        background-color: #000000;
+      &:nth-child(12) {
+        border-radius: 0 0 12px 0;
       }
     }
   }
@@ -510,14 +433,14 @@ ol span {
       flex-direction: column;
       background: $white;
       border-radius: 8px;
-      max-width: 420px;
+      max-width: 33%;
       margin-right: 30px;
       &:last-child {
         margin-right: 0;
       }
       &__info {
-        max-width: 360px;
-        margin: 30px auto;
+        max-width: 453px;
+        margin: 30px 30px;
       }
       &__title {
         @extend %h4;
@@ -620,3 +543,5 @@ ol span {
     color: $text;
   }
 }
+
+//Desktop SD//

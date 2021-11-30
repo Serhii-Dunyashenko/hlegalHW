@@ -109,11 +109,12 @@ body {
 }
 
 .container {
-  max-width: 1320px;
+  max-width: 1720px;
   margin: 0 auto;
 }
 
 .main-section {
+  padding: 0 60px;
   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643e72 87.46%);
   border-radius: 0px 0px 12px 12px;
 }
@@ -268,7 +269,7 @@ body {
   flex-direction: column;
   justify-content: center;
   padding-left: 60px;
-  max-width: 580px;
+  max-width: 861px;
 }
 .main-tags__info__title {
   color: #ffff;
@@ -314,7 +315,7 @@ body {
 .services__cards__item {
   display: flex;
   flex-direction: column;
-  max-width: 400px;
+  max-width: 28.7%;
   margin-right: 60px;
   margin-bottom: 60px;
 }
@@ -336,20 +337,20 @@ body {
 
 .section-divider {
   margin: 0 auto;
-  max-width: 1460px;
+  max-width: 1920px;
 }
 .section-divider-one {
   height: 10px;
   background-color: #cacadb;
   border-radius: 0px 0px 12px 12px;
-  max-width: 1400px;
+  max-width: 1880px;
   margin: 0 20px;
 }
 .section-divider-two {
   height: 10px;
   background-color: #e7e7f2;
   border-radius: 0px 0px 12px 12px;
-  max-width: 1360px;
+  max-width: 1840px;
   margin: 0 40px;
 }
 
@@ -404,7 +405,7 @@ body {
 
 .partners {
   padding-top: 30px;
-  max-width: 1440px;
+  max-width: 1720px;
   margin: 0 auto;
 }
 .partners__wrap {
@@ -418,102 +419,22 @@ body {
 .partners__grid {
   display: flex;
   flex-wrap: wrap;
+  border-radius: 12px;
 }
-.partners__grid__item-1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 25%;
-  height: 120px;
-  background-color: #1c4280;
+.partners__grid__image {
+  max-width: 25%;
 }
-.partners__grid__item-2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 25%;
-  height: 120px;
-  background-color: #143646;
+.partners__grid__image:first-child {
+  border-radius: 12px 0 0 0;
 }
-.partners__grid__item-3 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 25%;
-  height: 120px;
-  background-color: #f48b30;
+.partners__grid__image:nth-child(4) {
+  border-radius: 0 12px 0 0;
 }
-.partners__grid__item-4 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 25%;
-  height: 120px;
-  background-color: #9e4dc3;
+.partners__grid__image:nth-child(9) {
+  border-radius: 0 0 0 12px;
 }
-.partners__grid__item-5 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 25%;
-  height: 120px;
-  background-color: #fd9339;
-}
-.partners__grid__item-6 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 25%;
-  height: 120px;
-  background-color: #e2e2e4;
-}
-.partners__grid__item-7 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 25%;
-  height: 120px;
-  background-color: #c71c36;
-}
-.partners__grid__item-8 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 25%;
-  height: 120px;
-  background-color: #dcf3f9;
-}
-.partners__grid__item-9 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 25%;
-  height: 120px;
-  background-color: #eaeaea;
-}
-.partners__grid__item-10 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 25%;
-  height: 120px;
-  background-color: #282240;
-}
-.partners__grid__item-11 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 25%;
-  height: 120px;
-  background-color: #1d4568;
-}
-.partners__grid__item-12 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 25%;
-  height: 120px;
-  background-color: #000000;
+.partners__grid__image:nth-child(12) {
+  border-radius: 0 0 12px 0;
 }
 
 .publications {
@@ -535,15 +456,15 @@ body {
   flex-direction: column;
   background: #ffff;
   border-radius: 8px;
-  max-width: 420px;
+  max-width: 33%;
   margin-right: 30px;
 }
 .publications__recomended__item:last-child {
   margin-right: 0;
 }
 .publications__recomended__item__info {
-  max-width: 360px;
-  margin: 30px auto;
+  max-width: 453px;
+  margin: 30px 30px;
 }
 .publications__recomended__item__title {
   color: #006ccf;
