@@ -51,21 +51,23 @@ ol span {
   @extend %gradient-red-text;
 }
 .container {
-  max-width: 1720px;
+  max-width: 1920px;
   margin: 0 auto;
 }
 
 //MAIN SECTION//
 
 .main-section {
-  padding: 0 60px;
+  padding: 0 160px;
+  background-image: url("/image/Homepage_background.svg");
   background: $gradient-supersoft;
   border-radius: 0px 0px 12px 12px;
+
   &__banner {
     background-image: url("/image/Homepage_background.svg");
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: 50% 50%;
+    background-position: 50% 0%;
   }
 }
 
@@ -73,16 +75,25 @@ ol span {
 
 .header {
   padding: 50px 0 0 0;
+  &.mobile {
+    display: none;
+  }
   &__inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-basis: 100%;
   }
+  &__logo {
+    &.tablet {
+      display: none;
+    }
+  }
   &__navigation {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+
     &__separator {
       margin-right: 6px;
     }
@@ -176,12 +187,12 @@ ol span {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 261px;
+  padding-top: 361px;
 }
 .main-title {
   @extend %hero;
   color: $white;
-  margin-bottom: 305px;
+  margin-bottom: 405px;
 }
 .main-section__scroll-button {
   background-color: transparent;
@@ -195,7 +206,7 @@ ol span {
 //TAGS//
 
 .main-tags {
-  padding: 60px 0;
+  padding: 60px 160px;
   &__wrap {
     display: flex;
     justify-content: center;
@@ -205,6 +216,10 @@ ol span {
     flex-direction: column;
     padding-right: 60px;
     border-right: solid 4px rgba(255, 255, 255, 0.3);
+    flex-shrink: 0;
+    &.tablet {
+      display: none;
+    }
     &__tag {
       @extend %hero;
       margin-bottom: 30px;
@@ -304,8 +319,6 @@ ol span {
 
 //SECTION DIVIDER//
 .section-divider {
-  margin: 0 auto;
-  max-width: 1920px;
   &-one {
     height: 10px;
     background-color: #cacadb;
@@ -325,11 +338,14 @@ ol span {
 //TEAM//
 
 .team {
-  padding-top: 60px;
+  padding: 60px 160px 0 160px;
   &__slider {
     background-color: $bg;
     border-radius: 12px;
     display: flex;
+    &__image {
+      border-radius: 12px 0 0 12px;
+    }
     &__info {
       padding: 30px;
       &__title {
@@ -339,6 +355,7 @@ ol span {
       &__credits {
         @extend %h4;
         color: $text;
+        margin-bottom: 6px;
       }
       &__credits-job {
         font-style: normal;
@@ -378,9 +395,9 @@ ol span {
 //PARTNERS//
 
 .partners {
-  padding-top: 30px;
+  padding: 30px 100px 0 100px;
   max-width: 1720px;
-  margin: 0 auto;
+  margin: 0 auto 60px auto;
   &__wrap {
     display: flex;
     flex-direction: column;
@@ -417,7 +434,7 @@ ol span {
 
 .publications {
   background-color: $bg;
-  padding: 30px 0;
+  padding: 30px 160px;
   &__wrap {
     display: flex;
     flex-direction: column;
@@ -428,6 +445,7 @@ ol span {
   }
   &__recomended {
     display: flex;
+    justify-content: space-between;
     &__item {
       display: flex;
       flex-direction: column;
@@ -469,7 +487,8 @@ ol span {
 //FOOTER//
 
 .footer {
-  padding: 30px 0;
+  background-color: $bg;
+  padding: 30px 160px;
   &__wrap {
     display: flex;
     justify-content: space-between;
@@ -541,7 +560,295 @@ ol span {
     font-size: 16px;
     line-height: 20px;
     color: $text;
+    &.tablet {
+      display: none;
+    }
   }
 }
 
 //Desktop SD//
+@media (max-width: 1920px) {
+  .container {
+    max-width: 1440px;
+  }
+  .main-tags {
+    padding: 60px 0;
+  }
+  .footer {
+    padding: 30px 60px;
+  }
+  .publications {
+    padding: 30px 60px;
+  }
+  .partners {
+    padding: 30px 0 0 0;
+    max-width: 1440px;
+    &__grid {
+      &__image {
+        &:first-child {
+          border-radius: 0 0 0 0;
+        }
+        &:nth-child(4) {
+          border-radius: 0 0 0 0;
+        }
+        &:nth-child(9) {
+          border-radius: 0 0 0 0;
+        }
+        &:nth-child(12) {
+          border-radius: 0 0 0 0;
+        }
+      }
+    }
+  }
+  .team {
+    padding: 60px 60px 0 60px;
+  }
+  .main-section {
+    padding: 0 60px 0 60px;
+  }
+  .main-title__wrap {
+    padding-top: 261px;
+  }
+  .main-title {
+    margin-bottom: 305px;
+  }
+}
+
+//Tablet HD //
+@media (max-width: 1440px) {
+  .container {
+    max-width: 1024px;
+  }
+  .main-title__wrap {
+    padding-top: 245px;
+  }
+  .main-title {
+    margin-bottom: 289px;
+  }
+}
+
+//Tablet SD //
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+  .main-section {
+    padding: 0 0 0 0;
+    &__banner {
+      background-size: 109%;
+      background-position: 96% 0%;
+    }
+  }
+
+  .main-title__wrap {
+    padding-top: 264px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .main-title {
+    margin-bottom: 417px;
+  }
+  .header {
+    padding: 50px 60px 0 60px;
+    &__inner {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__navigation {
+      &__bottom {
+        justify-content: flex-start;
+      }
+      &__top {
+        margin-bottom: 30px;
+      }
+      &__list {
+        padding-left: 0;
+      }
+      &__language {
+        padding-left: 0;
+      }
+    }
+    &__logo {
+      display: none;
+      &.tablet {
+        display: block;
+        width: 23.8%;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .main-tags {
+    padding: 60px;
+    &__info {
+      padding-left: 0;
+      padding-top: 60px;
+    }
+    &__tags {
+      display: none;
+      &__tag {
+        display: inline;
+        margin-right: 30px;
+        margin-bottom: 0;
+        white-space: nowrap;
+      }
+      &.tablet {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        padding: 0 0 60px 0;
+        border-right: 0;
+        border-bottom: solid 4px rgba(255, 255, 255, 0.3);
+      }
+    }
+  }
+  .services {
+    padding: 60px;
+    &__cards {
+      &__item {
+        max-width: 45.3%;
+        &:nth-child(2n) {
+          margin-right: 0;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+        &:nth-last-child(2) {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  .team {
+    &__slider {
+      flex-direction: column;
+      &__image {
+        border-radius: 12px 12px 0 0;
+      }
+    }
+  }
+  .partners {
+    &__grid {
+      &__image {
+        max-width: 33.33333%;
+      }
+    }
+  }
+  .publications {
+    &__recomended {
+      flex-wrap: wrap;
+      &__item {
+        max-width: 47.67%;
+        &:nth-child(1) {
+          margin-bottom: 30px;
+        }
+        &:nth-child(2) {
+          margin-right: 0;
+          margin-bottom: 30px;
+        }
+        &:nth-child(3) {
+          flex-basis: 100%;
+          max-width: 100%;
+        }
+        &__info {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+  .footer {
+    &__phone {
+      white-space: nowrap;
+    }
+    &__credits {
+      display: none;
+      &.tablet {
+        white-space: nowrap;
+        display: block;
+      }
+    }
+    &__contacts {
+      flex-basis: 100%;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+  }
+}
+
+//MOBILE//
+
+@media (max-width: 768px) {
+  .main-title__wrap {
+    padding-top: 0;
+  }
+  .container {
+    width: 375px;
+  }
+  .header {
+    display: none;
+    &__logo {
+      display: block;
+      margin-right: 4px;
+      width: 26%;
+    }
+    &__slash {
+      margin-right: 4px;
+    }
+    &.mobile {
+      display: flex;
+      padding: 0;
+    }
+    &__navigation {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      flex-basis: 100%;
+      &__hamburger-menu {
+        &__button {
+          width: 32px;
+          height: 32px;
+          background-image: url("/image/Hamburger.svg");
+          color: transparent;
+          background-color: transparent;
+          padding: 0;
+          border: none;
+        }
+      }
+      &__title {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        color: $white;
+      }
+      &__logo {
+        align-items: center;
+        display: flex;
+      }
+      &__inner {
+        display: flex;
+        justify-content: space-between;
+        flex-basis: 100%;
+        padding: 10px 15px;
+      }
+      &__phone {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        color: $white;
+      }
+      &__wrap {
+        &__top {
+          background-color: #f5f5fa33;
+          display: flex;
+          flex-direction: row;
+          flex-basis: 100%;
+        }
+        &__bottom {
+          display: flex;
+        }
+      }
+    }
+  }
+}
