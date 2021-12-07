@@ -75,7 +75,7 @@ ol span {
 
 .header {
   padding: 50px 0 0 0;
-  &.services {
+  &.serv {
     margin-bottom: 50px;
   }
   &__slash {
@@ -93,6 +93,11 @@ ol span {
   &__logo {
     &.tablet {
       display: none;
+    }
+    &__image {
+      &.tablet {
+        display: none;
+      }
     }
   }
   &__navigation {
@@ -697,19 +702,33 @@ ol span {
         padding-left: 0;
       }
       &__logo {
-        display: none;
+        &.serv {
+          display: none;
+        }
+        &__image {
+          display: none;
+        }
       }
     }
     &__logo {
-      display: none;
-      &__image {
-        width: 23.8%;
-        margin-right: 4px;
-      }
       &.tablet {
         display: flex;
         align-items: center;
         margin-bottom: 30px;
+      }
+      &__image {
+        display: none;
+        &.tablet {
+          display: flex;
+          align-items: center;
+          margin-bottom: 30px;
+          max-width: 26%;
+          &.serv {
+            display: block;
+            margin-right: 4px;
+            margin-bottom: 0;
+          }
+        }
       }
     }
   }
@@ -833,6 +852,11 @@ ol span {
       display: block;
       margin-right: 4px;
       width: 26%;
+      &__image {
+        display: block;
+        max-width: 25%;
+        margin-right: 4px;
+      }
     }
     &__slash {
       margin-right: 4px;
@@ -885,12 +909,17 @@ ol span {
           background-color: #f5f5fa33;
           display: flex;
           flex-direction: row;
+          justify-content: space-between;
           flex-basis: 100%;
         }
         &__bottom {
           display: flex;
+          justify-content: space-between;
+          flex-basis: 100%;
           margin-bottom: 129px;
           &.services {
+            justify-content: space-between;
+            flex-basis: 100%;
             padding-bottom: 10px;
             padding-top: 15px;
             margin-bottom: 0;
